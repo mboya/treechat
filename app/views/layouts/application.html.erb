@@ -7,8 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    TreeChat
+                </a>
+                <ul class="nav navbar-nav">
+                    <li><%= link_to "All Statuses", statuses_path %></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<%= yield %>
-
+    <div class="container">
+        <%= yield %>
+    </div>
 </body>
 </html>
